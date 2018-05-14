@@ -1,0 +1,8 @@
+#
+# See fstab(5).
+#
+# <file system>	<dir>	<type>	<options>		<dump>	<pass>
+tmpfs		/tmp	tmpfs	defaults,nosuid,nodev   0       0
+UUID=cd99f0e6-947e-403e-b79f-d89537f48739 / ext4 defaults 0 1
+UUID=6496-2EDE /boot vfat defaults 0 2
+/dev/sda /home/dashcam/videos vfat defaults,nofail,x-systemd.device-timeout=1 0 2
